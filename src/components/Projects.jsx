@@ -8,6 +8,12 @@ import { useEffect, useRef } from "react";
 
 export const projects = [
     {
+        title: "SuperStar-Academy",
+        url: "https://www.youtube.com/watch?v=beskIs6sWAA",
+        image: "projects/SuperStar_CricketAcademy.png",
+        description: "SuperStar Academy is the best cricket academy that allows you to learn from the best in the industry.",
+    },
+    {
         title: "VectraCraft",
         url: "https://vecrta-craft.vercel.app/",
         image: "projects/VectraCraft.jpg",
@@ -15,7 +21,7 @@ export const projects = [
     },
     {
         title: "3D Portfolio",
-        url: "https://vecrta-craft.vercel.app/",
+        url: "https://3d-portfolio-chi-indol.vercel.app/",
         image: "projects/baking.jpg",
         description: "This is my 3D Portfolio",
     },
