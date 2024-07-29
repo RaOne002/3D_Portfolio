@@ -11,13 +11,13 @@ export const projects = [
         title: "SuperStar-Academy",
         url: "https://www.youtube.com/watch?v=beskIs6sWAA",
         image: "projects/SuperStar_CricketAcademy.png",
-        description: "SuperStar Academy is the best cricket academy that allows you to learn from the best in the industry.",
+        description: "",
     },
     {
         title: "VectraCraft",
         url: "https://vecrta-craft.vercel.app/",
         image: "projects/VectraCraft.jpg",
-        description: "Let your imagination run wild with VectraCraft, a platform that allows you to create and share your own art.",
+        description: "Let your imagination run wild with VectraCraft.",
     },
     {
         title: "3D Portfolio",
@@ -29,7 +29,7 @@ export const projects = [
         title: "Aarogya",
         url: "https://aarogya-three.vercel.app/",
         image: "projects/Aarogya2.png",
-        description: "Aarogya is a patient management system that allows you to book appointments, view your medical history, and more.",
+        description: "Aarogya is a patient management system .",
     },
 ];
 
