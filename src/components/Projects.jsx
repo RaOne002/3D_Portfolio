@@ -122,7 +122,7 @@ export const Projects = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [setCurrentProject]);
+  }, [setCurrentProject, currentProject]);
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
