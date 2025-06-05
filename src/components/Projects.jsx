@@ -110,7 +110,7 @@ export const Projects = () => {
   // Touch handling for mobile swipe
   const touchStartX = useRef(null);
 
-  // Auto-swap projects on mobile every 3 seconds
+  // Auto-swap projects on mobile every 2 seconds
   useEffect(() => {
     const isMobile = /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
     if (!isMobile) return;
@@ -119,10 +119,10 @@ export const Projects = () => {
       setCurrentProject((prev) =>
         prev < projects.length - 1 ? prev + 1 : 0
       );
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
-  }, [setCurrentProject]);
+  }, [setCurrentProject, currentProject]);
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
