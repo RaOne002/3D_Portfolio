@@ -35,7 +35,7 @@ export const projects = [
   {
     title: "Ignite Business Loans",
     url: "https://ignitebusinessloans.com/",
-    image: "projects/IgniteBL.png",
+    image: "projects/IgniteBL.jpg",
     description: "",
   },
   {
