@@ -102,22 +102,22 @@ const skills = [
     level: 50,
   },
   {
-    title: "Java, C",
+    title: "HTML, CSS",
     level: 50,
   },
   {
-    title: "python,mongodb",
+    title: "Java, SQL",
     level: 30,
   },
 ];
 const languages = [
   {
     title: "English",
-    level: 80,
+    level: 90,
   },
   {
     title: "Hindi",
-    level: 80,
+    level: 90,
   },
   {
     title: "Bengali",
@@ -236,7 +236,7 @@ const ProjectSection = () => {
 
   return (
     <Section>
-      <div className="flex w-full h-full gap-8 items-center justify-center">
+      <div className="hidden md:flex w-full h-full gap-8 items-center justify-center">
         <button
           className="hover:text-indigo-600 transition-colors"
           onClick={previousProject}
@@ -264,7 +264,7 @@ const ContactSection = () => {
       <div className="mt-8 p-8 rounded-md bg-white bg-opacity-50 w-96 max-w-full">
         {state.succeeded ? (<p className="text-green-800 text-center">Thanks for reaching out!</p>) : (
           <form onSubmit={handleSubmit}>
-            <label for="name" className="font-medium text-gray-900 block mb-1">
+            <label htmlFor="name" className="font-medium text-gray-900 block mb-1">
               Name
             </label>
             <input
@@ -274,7 +274,7 @@ const ContactSection = () => {
               className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
             />
             <label
-              for="email"
+              htmlFor="email"
               className="font-medium text-gray-900 block mb-1 mt-8"
             >
               Email
@@ -292,7 +292,7 @@ const ContactSection = () => {
               errors={state.errors}
             />
             <label
-              for="email"
+              htmlFor="message"
               className="font-medium text-gray-900 block mb-1 mt-8"
             >
               Message
@@ -306,7 +306,7 @@ const ContactSection = () => {
               className="mt-1 text-red-500"
               errors={state.errors}
             />
-            <button disabled={state.submitting} className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 ">
+            <button type="submit" disabled={state.submitting} className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 ">
               Submit
             </button>
           </form>

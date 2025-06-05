@@ -19,10 +19,10 @@ export const Menu = (props) => {
             <div className={`z-10 fixed top-0 right-0 bottom-0 bg-white transition-all overflow-hidden flex flex-col ${menuOpened ? "w-full md:w-80" : "w-0"}`}
             >
                 <div className="flex-1 flex items-start justify-center flex-col gap-6 p-8">
-                    <MenuButton label="About" onClick={() => onSectionChange(0)} />
-                    <MenuButton label="Skills" onClick={() => onSectionChange(1)} />
-                    <MenuButton label="Projects" onClick={() => onSectionChange(2)} />
-                    <MenuButton label="Contact" onClick={() => onSectionChange(3)} />
+                    <MenuButton label="About" onClick={() => { onSectionChange(0); setMenuOpened(false); }} />
+                    <MenuButton label="Skills" onClick={() => { onSectionChange(1); setMenuOpened(false); }} />
+                    <MenuButton label="Projects" onClick={() => { onSectionChange(3); setMenuOpened(false); }} />
+                    <MenuButton label="Contact" onClick={() => { onSectionChange(4); setMenuOpened(false); }} />
                 </div>
             </div>
         </>
@@ -31,7 +31,7 @@ export const Menu = (props) => {
 
 const MenuButton = (props) => {
     const { label, onClick } = props;
-    return(
+    return (
         <button
             onClick={onClick}
             className="text-2xl font-bold cursor-pointer hover:text-indigo-600 transition-colors"
