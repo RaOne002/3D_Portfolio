@@ -44,6 +44,12 @@ export const projects = [
     image: "projects/ProsperityBL.png",
     description: "",
   },
+  {
+    title: "LenQ",
+    url: "https://lenq-website.vercel.app/",
+    image: "projects/LenQ.png",
+    description: "",
+  },
 ];
 
 const Project = (props) => {
